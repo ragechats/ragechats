@@ -1,0 +1,96 @@
+html {
+    overflow: hidden;
+}
+
+#home {
+    color: #BBB;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    z-index: 10;
+}
+
+#inbox-wrapper {
+    bottom: 120px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#inbox {
+    bottom: 5px;
+    color: #333;
+    left: 15px;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+    position: absolute;
+    right: 0px;
+}
+#inbox p {
+    position: relative;
+    word-wrap: break-word;
+}
+#inbox p strong {
+    color: red;
+}
+#inbox b {
+    color: black;
+    margin-bottom: -10px;
+    margin-right: 4px;
+}
+
+#input {
+    bottom: 100px;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+#send {
+    padding: 3px 10px 4px 10px;
+    position: absolute;
+    right: 0px;
+}
+
+#message-wrapper {
+    left: 2px;
+    position: absolute;
+    right: 70px;
+}
+#message {
+    color: #444;
+    height: 16px;
+    width: 100%;
+}
+
+#ragefaces-wrapper {
+    bottom: 0px;
+    height: 90px;
+    left: 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    right: 0px;
+}
+#ragefaces {
+    width: 6750px;
+    margin: 6px;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+div.alert-message, div.alert-message.block-message {
+    display: inline-block;
+    margin-bottom: 9px;
+    margin-right: 10px;
+    padding: 2px 8px;
+}
+div.alert-message.block-message.info {
+    background-color: #CCE4EA;
+    border-color: #A4CBD7;
+}
+

@@ -1,0 +1,126 @@
+/* Rage face sprites */
+span.rage {
+    background-image: url(http://static.ragechats.com/img/ragefaces.gif);
+    display: inline-block;
+    height: 64px;
+    vertical-align: -10%;
+    width: 64px;
+}
+
+/* 0px Neutral, Determined */
+span.dude { background-position: 0px 0px; }
+span.yawn { background-position: -64px 0px; }
+span.quite { background-position: -128px 0px; }
+span.dazed { background-position: -192px 0px; }
+span.pokerface { background-position: -256px 0px; }
+span.badpokerface { background-position: -320px 0px; }
+span.hmmm { background-position: -384px 0px; }
+span.challengeaccepted { background-position: -448px 0px; }
+span.determined { background-position: -512px 0px; }
+span.reallydetermined { background-position: -576px 0px; }
+
+/* -64px Happy */
+span.smile { background-position: 0px -64px; }
+span.blistful { background-position: -64px -64px; }
+span.fakesmile {  background-position: -128px -64px; }
+span.excited { background-position: -192px -64px; }
+span.excitedtears { background-position: -256px -64px; }
+span.foreveraloneexcited { background-position: -320px -64px; }
+span.ewbte { background-position: -384px -64px; }
+span.awwwyeah { background-position: -448px -64px; }
+span.closeenough { background-position: -512px -64px; }
+span.hatersgonnahate { background-position: -576px -64px; }
+
+/* -128px Laughing */
+span.fuckthatbitch { background-position: 0px -128px; }
+span.lol { background-position: -64px -128px; }
+span.lolright {  background-position: -128px -128px; }
+span.lolleft { background-position: -192px -128px; }
+span.pfft { background-position: -256px -128px; }
+span.pfft2 { background-position: -320px -128px; }
+span.high { background-position: -384px -128px; }
+span.sweettears { background-position: -448px -128px; }
+span.reddit { background-position: -576px -128px; }
+
+/* -192px Pleasure */
+span.megusta { background-position: 0px -192px; }
+span.creepymegusta { background-position: -64px -192px; }
+span.fapfap {  background-position: -128px -192px; }
+span.fapfapquite { background-position: -192px -192px; }
+span.fffffffuuuuuuuuuuuud { background-position: -256px -192px; }
+span.sonmegusta { background-position: -320px -192px; }
+span.sweetjesus { background-position: -384px -192px; }
+span.dogsweetjesus { background-position: -448px -192px; }
+span.drunk { background-position: -512px -192px; }
+span.blistfulnotgiveafuck { background-position: -576px -192px; }
+
+/* -256px Surprised, Amazed */
+span.ohgod { background-position: 0px -256px; }
+span.surprised { background-position: -64px -256px; }
+span.dumbfoundedkid {  background-position: -128px -256px; }
+span.dumbfounded { background-position: -192px -256px; }
+span.what { background-position: -256px -256px; }
+span.milk { background-position: -320px -256px; }
+span.lean { background-position: -384px -256px; }
+span.gasp { background-position: -448px -256px; }
+span.clevergirl { background-position: -512px -256px; }
+span.obamanotbad { background-position: -576px -256px; }
+
+/* -320px Sad, Stupid */
+span.sad { background-position: 0px -320px; }
+span.busted { background-position: -64px -320px; }
+span.why {  background-position: -128px -320px; }
+span.crying { background-position: -192px -320px; }
+span.foreveralone { background-position: -256px -320px; }
+span.okay { background-position: -320px -320px; }
+span.areyoukiddingme { background-position: -384px -320px; }
+span.retarded { background-position: -448px -320px; }
+span.thefuck { background-position: -512px -320px; }
+span.seriouslychan { background-position: -576px -320px; }
+
+/* -384px Troll */
+span.troll { background-position: 0px -384px; }
+span.insanetroll { background-position: -64px -384px; }
+span.melvin {  background-position: -128px -384px; }
+span.gaytroll { background-position: -192px -384px; }
+span.ifeelsyabra { background-position: -256px -384px; }
+span.trolldad { background-position: -320px -384px; }
+span.trolldadjump { background-position: -384px -384px; }
+span.ilied { background-position: -448px -384px; }
+span.evilsmile { background-position: -512px -384px; }
+span.hitler { background-position: -576px -384px; }
+
+/* -448px Angry */
+span.mad { background-position: 0px -448px; }
+span.mad2 { background-position: -64px -448px; }
+span.foaming {  background-position: -128px -448px; }
+span.pissed { background-position: -192px -448px; }
+span.shaking { background-position: -256px -448px; }
+span.stare { background-position: -320px -448px; }
+span.yuno { background-position: -384px -448px; }
+span.no { background-position: -448px -448px; }
+span.dad { background-position: -512px -448px; }
+span.mom { background-position: -576px -448px; }
+
+/* -512px Rage */
+span.rage1 { background-position: 0px -512px; }
+span.rage2 { background-position: -64px -512px; }
+span.ragenuclear {  background-position: -128px -512px; }
+span.rageomega { background-position: -192px -512px; }
+span.rageextreme { background-position: -256px -512px; }
+span.epicbeardguy { background-position: -320px -512px; }
+span.ragecanadian { background-position: -384px -512px; }
+span.rageredditalien { background-position: -448px -512px; }
+span.ragecat { background-position: -512px -512px; }
+span.retarddog { background-position: -576px -512px; }
+
+/* -576px Misc. */
+span.fumanchu { background-position: 0px -576px; width: 128px; }
+span.beerguy { background-position: -128px -576px; }
+span.cerealspitting {  background-position: -192px -576px; }
+span.newspaperguy { background-position: -256px -576px; }
+span.newspapertear { background-position: -320px -576px; }
+span.gtfo { background-position: -384px -576px; }
+span.truestory { background-position: -448px -576px; }
+span.grandmashit { background-position: -512px -576px; }
+span.freddie { background-position: -576px -576px; }

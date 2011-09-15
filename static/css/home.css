@@ -1,0 +1,77 @@
+body.center {
+    text-align: center;
+}
+
+#websocketfail {
+    display: none;
+    width: 320px;
+}
+
+#login {
+    display: inline-block;
+    margin: 20px 0px;
+    text-align: left;
+    width: 320px;
+}
+#login span.label {
+    display: block;
+    margin-top: 20px;
+    padding: 2px;
+}
+#login i {
+    color: #BBB;
+}
+#login input {
+    font-size: 18px;
+    height: 23px;
+    width: 310px;
+}
+
+#buttons {
+    display: inline-block;
+    margin: 20px 0px;
+    text-align: center;
+    width: 320px;
+}
+#buttons p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+a.btn {
+    margin: 10px 0px;
+    text-align: center;
+    width: 160px;
+}
+
+a.btn span.rage {
+    margin-right: 10px;
+    display: block;
+    float: left;
+}
+
+#stats {
+    margin: 20px 0px;
+    display: inline-block;
+    width: 320px;
+}
+#stats p {
+    font-size: 120%;
+}
+
+table {
+    margin: 30px 0px;
+}
+th.right, td.right {
+    text-align: right;
+}
+
+div.block-message {
+    display: inline-block;
+    padding: 0px 5px 0px 20px !important;
+    margin: 10px 0px;
+    text-align: left;
+    width: 320px;
+}
+div.block-message p {
+    margin: 10px 10px !important;
+}

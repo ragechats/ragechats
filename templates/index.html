@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ragechats.com</title>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="http://static.ragechats.com/css/home.css?v0.2.0" type="text/css" />
+    <link rel="stylesheet" href="http://static.ragechats.com/css/ragefaces.css?v0.2.0" type="text/css" />
+    <link rel="shortcut icon" href="http://static.ragechats.com/img/favicon.ico?v0.2.0" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25517735-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body class="center">
+    {% for error in errors %}
+      <div class="alert-message error">{{ error }}</div>
+    {% end %}
+    <div id="websocketfail" class="alert-message block-message error">
+      <p><strong>Your browser does not support WebSockets.</strong></p>
+      <p>This website supports the latest versions of the following browsers:</p>
+      <ul>
+        <li><a href='http://www.google.com/chrome' target='_blank'>Google Chrome</a></li>
+        <li><a href='http://www.mozilla.org/firefox/' target='_blank'>Mozilla Firefox</a></li>
+        <li><a href='http://www.apple.com/safari/' target='_blank'>Safari</a></li>
+        <li><a href='http://www.opera.com/' target='_blank'>Opera</a> (<a href='http://techdows.com/2010/12/enable-websockets-in-opera-11.html' target='_blank'>with websockets enabled</a>)</li>
+      </ul>
+    </div>
+    <br>
+    <div id="login">
+      <span class="label">Nickname</span>
+      <input id="user_id" class="xlarge" type="text" maxlength="16" value="">
+      <span class="label">Chatroom <i>(Optional)</i></span>
+      <input id="chat_id" class="xlarge" type="text" maxlength="32" value="">
+    </div>
+    <br>
+    <div id="buttons">
+      <a id="startchat" class="btn large primary" href="#"><div>Start Rage Chat</div></a>
+      <p>or</p>
+      <a id="strangerchat" class="btn large primary" href="#">
+        <span class="rage foreveraloneexcited"></span>
+        <div>Rage Chat with a Stranger</div>
+      </a>
+    </div>
+    <br>
+    <div id="stats">
+      <p>Currently <b>{{ 0 if num_users == None else num_users }}</b> users in <b>{{ num_chats }}</b> chats.</p>
+      <table>
+      <thead>
+        <tr>
+          <th>Popular Rage Chats</th>
+          <th class="right"># Users</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for chat_id in [c for c in popular_chats if c[1] > 2] %}
+      <tr>
+        <td><a href="/{{ chat_id[0] }}">{{ chat_id[0] }}</a></td>
+        <td class="right">{{ format(int(chat_id[1]), ",d") }}</td>
+      {% end %}
+      </tbody>
+    </table>
+    </div>
+    <br>
+
+    <div id="about" class="alert-message block-message info">
+      <p>The following technologies were used to develop and deploy this website:</p>
+      <ul>
+        <li><a href="http://www.python.org/" target="_blank">Python</a></li>
+        <li><a href="http://www.tornadoweb.org/" target="_blank">Tornado Web Server and Framework</a></li>
+        <li><a href="http://redis.io/" target="_blank">Redis Advanced Key-Value Store</a></li>
+        <li><a href="http://validator.w3.org/check?uri=ragechats.com" target="_blank">HTML5</a> <a href="http://dev.w3.org/html5/websockets/" target="_blank">WebSockets</a></li>
+        <li><a href="http://jquery.com/" target="_blank">jQuery Javascript Library</a></li>
+        <li><a href="https://github.com/carhartl/jquery-cookie" target="_blank">jQuery Cookie Plugin</a></li>
+        <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap CSS Toolkit</a></li>
+        <li><a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a></li>
+        <li><a href="http://www.linode.com/?r=8846e4f60f7b5b4f09055078c2d625418bce044c" target="_blank">Linode VPS Hosting</a></li>
+        <li><a href="http://haproxy.1wt.eu/" target="_blank">HAProxy Load Balancer</a></li>
+        <li><a href="http://nginx.org/" target="_blank">nginx Web Server</a></li>
+      </ul>
+    </div>
+
+    <a href="https://github.com/ragechats/ragechats" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <script src="http://static.ragechats.com/js/jquery.cookie.js?v0.2.0" type="text/javascript"></script>
+    <script src="http://static.ragechats.com/js/home.js?v0.2.0" type="text/javascript"></script>
+  </body>
+</html>
